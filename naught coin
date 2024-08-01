@@ -1,0 +1,6 @@
+//secondaddr是另外一个账户地址
+secondaddr='0xCB3D2F536f533869f726F0A3eA2907CAA67DDca1'
+totalvalue='1000000000000000000000000'
+//给自己授权
+await contract.approve(player,totalvalue)
+await contract.transferFrom(player,secondaddr,totalvalue)
